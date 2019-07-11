@@ -1,0 +1,25 @@
+*
+    box-sizing: border-box
+
+body 
+  +light
+
+.container 
+    width: 1170px
+    margin: auto
+    @media (max-width: 1170px)
+        width: 960px
+
+.button 
+  border-radius: 10px
+  background-color: $main-color
+  border: none
+  padding: 18px 30px
+  outline: none
+
+.button:hover 
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15)
+    cursor: pointer
+
+.section 
+    padding: 60px 0

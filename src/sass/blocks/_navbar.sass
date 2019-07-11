@@ -1,0 +1,67 @@
+.navbar
+    padding: 30px 0
+    &-block 
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &__info 
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &__avatar 
+        width: 100px
+        height: 100px
+        border-radius: 50%
+        background: url('https://pp.userapi.com/c850632/v850632196/a54ae/DQWWjvDHiiQ.jpg?ava=1') center no-repeat
+        background-size: contain
+
+    &__card 
+        display: flex
+        flex-direction: column
+        margin-left: 25px
+
+    &__name 
+        font-size: 20px
+        margin-bottom: 10px
+        +mid
+
+    &__activity 
+        font-size: 15px
+
+    &-list
+        display: flex
+        justify-content: space-between
+        align-items: center
+        text-transform: uppercase
+
+        &__menu 
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+        &__1 
+            margin-right: 15px
+            text-decoration: none
+            color:#000000
+            
+        &__1:after 
+            display: block
+            content: ""
+            height: 2px
+            width: 0%
+            background-color: $main-color
+            transition: width .3s ease-in-out
+
+        &__1:hover:after,
+        &__1:focus:after 
+            width: 100%
+
+.button__menu 
+    margin-left: 30px
+    width: 170px
+    height: 50px
+    font-size: 15px
+    border-radius: 15px
+    +mid
